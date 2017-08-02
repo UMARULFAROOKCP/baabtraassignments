@@ -1,0 +1,120 @@
+.container
+		{
+			background-color: #e8ebed;
+			width: auto;
+			height:auto;
+			border-radius: 5px;
+			margin: 5% 30%;
+		}
+		.log_header
+		{
+			margin-left: 50px;
+			font-weight: bold;
+			font-size: 30px;
+		}
+		
+		.fname,.sname
+		{
+			font-size: 15px;
+			font-weight: bold;
+			width: 40%;
+			padding: 12px 20px;
+			margin: 8px 0;
+		    display: inline-block;
+		    border: 1px solid #ccc;
+		    border-radius: 4px;
+		    box-sizing: border-box;
+		}
+		.mobile,.pwd
+		{
+			font-size: 15px;
+			font-weight: bold;
+			clear: left;
+			width: 81%;
+			padding: 12px 20px;
+			margin: 8px 0px;
+		    display: inline-block;
+		    border: 1px solid #ccc;
+		    border-radius: 4px;
+		    box-sizing: border-box;
+		}
+		
+		.dy,.mnt,.yr
+		{
+			float: left;
+			width: 15%;
+			height: 35px;
+			margin: 8px 0;
+		    display: inline-block;
+		    border: 1px solid #ccc;
+		    border-radius: 4px;
+		    box-sizing: border-box;
+		    background-color: white;
+		}
+		.fname,.mobile,.pwd,.bdy,.birthday,.sex,p,button
+		{
+			margin-left: 10%;
+			padding-bottom: 10px;
+		}
+
+		.bdy
+		{
+			clear: right;
+		}
+		span
+		{
+			font-weight: bold;
+			font-size: 12px;
+		}
+		span
+		{
+			color: #3b5998;
+		}
+		label
+		{
+			 font-weight: bold;
+		}
+		#foot
+		{
+			 font-size: 15px;
+		}
+
+		.btn
+		{
+			background: linear-gradient(#279330,#29661d);
+
+			//background-color: #279330;
+		    border: none;
+		    color: white;
+		    padding: 15px 32px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 20px;
+		    font-weight: bold;
+		    font-family: Arial, Helvetica, sans-serif;
+		    border-radius:0.2em;
+		    text-shadow: 0.5px 0.5px white;
+		    margin-bottom: 25px;
+		}
+		.txt
+		{
+			width: 75%;
+			margin-left: 15px;
+		}
+		.mainb
+		{
+			height: 50px;
+
+		}
+		.ndbd
+		{
+			height: 20px;
+			float: left;
+			width: 150px;
+			margin-top: -20px;
+		}
+		.sex
+		{
+			clear: left;
+		}
