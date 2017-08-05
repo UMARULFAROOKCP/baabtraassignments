@@ -4,62 +4,238 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="proj.css">
 	<style type="text/css">
+
+
+	.container
+		{
+			background: -webkit-linear-gradient(top, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%);
+			border-radius: 5px;
+			margin: 0px 5px;
+			float: left;
+			width: 500px;
+			height: 600px;
+			font-family: sans-serif;
+		}
+		.log_header
+		{
+			margin-left: 55px;
+			margin-top: -10px;
+			font-weight: bold;
+			font-size: 25px;
+		}
+
+		h5
+		{
+			margin-top: -20px;
+		}
 		
+		.fname,.sname
+		{
+			font-size: 18px;
+			font-weight: normal;
+			width: 40%;
+			padding: 12px 20px;
+			margin: 1px 0;
+		    display: inline-block;
+		    border: 1px solid #ccc;
+		    border-radius: 4px;
+		    box-sizing: border-box;
+
+		}
+		.mobile,.pwd
+		{
+			font-size: 18px;
+			font-weight: normal;
+			clear: left;
+			width: 81%;
+			padding: 12px 20px;
+			margin: 8px 0px;
+		    display: inline-block;
+		    border: 1px solid #ccc;
+		    border-radius: 4px;
+		    box-sizing: border-box;
+		}
+		
+		.dy,.mnt,.yr
+		{
+			float: left;
+			width: 15%;
+			height: 35px;
+			margin: 8px 0;
+		    display: inline-block;
+		    border: 1px solid #ccc;
+		    border-radius: 4px;
+		    box-sizing: border-box;
+		    background-color: white;
+		}
+		.fname,.mobile,.pwd,.bdy,.birthday,.sex,p,button
+		{
+			margin-left: 10%;
+			padding-bottom: 10px;
+		}
+
+		.bdy
+		{
+			clear: right;
+		}
+		span
+		{
+			font-weight: bold;
+			font-size: 12px;
+		}
+		span
+		{
+			color: #3b5998;
+		}
+		label
+		{
+			 font-weight: bold;
+		}
+		#foot
+		{
+			 font-size: 15px;
+		}
+
+		.btn
+		{
+			background: -webkit-linear-gradient(top, #6bba70 0%,#6bba70 100%);
+			//background-color: #279330;
+		    border: none;
+		    color: white;
+		    padding: 10px 32px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 20px;
+		    font-weight: bold;
+		    font-family: Arial, Helvetica, sans-serif;
+		    border-radius:0.2em;
+		    text-shadow: 0.5px 0.5px white;
+		    margin-bottom: 25px;
+		    margin-top: -10px;
+		}
+		.txt
+		{
+			width: 75%;
+			margin-left: 15px;
+			margin-top: -20px;
+		}
+		.mainb
+		{
+			height: 45px;
+
+		}
+		.ndbd
+		{
+			height: 15px;
+			float: left;
+			width: 175px;
+			margin-top: -20px;
+		}
+		.sex
+		{
+			clear: left;
+		}
+
+	body
+	{
+		    overflow-y: scroll;
+		    font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif;
+		    letter-spacing: normal;
+		    font-weight: normal;
+	}
 	.main
 	{
 		margin-bottom: 5px;
 		margin-top: -10px;
 		margin-left: -10px;
-		border-style: solid;
-    	border-color:red;
-		width:1347px;
+		margin-right: -10px;
+		width:1360px;
 		height: auto;
+		
 	}
 	.header
 	{
 		float: left;
-		border-style: solid;
-    	border-color: blue;
-    	width: 1344px;
-    	height: auto;
-    	
+		background-color: #434399;
+    	width: 1358px;
+    	height: 82px;
+    	margin-left: -5px;
+    	margin-right: 10px
+	   	padding:0;
 	}
 
 	.logo
 	{
-		background-image: url(fb_logo.png);
 		float: left;
-		border-style: solid;
-    	border-color: yellow;
-    	width: 672px;
+		/*border-style: solid;
+    	border-color: yellow;*/
+    	width: 50%;
     	height: auto;
+    	background-color: #434399;
     	
+	}
+	.log
+	{
+		width: auto;
+		height: auto;
+		padding-left: 75px;
+		padding-top: 10px;
+		margin-top: 10px;
 	}
 	.login
 	{
 		float: left;
-		border-style: solid;
-    	border-color:orange;
-    	width: 660px;
-    	height: auto; 	
+		margin-left: 40px;
+    	width: auto;
+    	height: auto;
+    	background-color: #434399;
 	}
-	.sub
+	.sub1
 	{
-		clear: left;
+				width: 1353px;
+				height: auto;
+				float: left;
+				background: -webkit-linear-gradient(top, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%);
+
 	}
 	.fb_con
 	{
 		float: left;
-		width:672px;
-		border-style: solid;
-    	border-color: black;
-    	height: auto;
+		width:640px;
+		height: 600px;
+		
+    	background: -webkit-linear-gradient(top, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%);
+
+    	
 	}
-	.conatiner
+	
+		
+	.btn_login
 	{
-		float: left;
-		width: 660px;
-		height: auto;
+		padding-left: 5px;
+		margin-left: 10px;
+		height: 20px; background-color:#5555e0; border:none; color: white; font-weight: bold;
+	}
+	.img_con
+	{
+
+		padding-top: -5px;
+		padding-left: 75px;
+		height: 210px;
+		margin-top: -10px;
+
+	}
+	.con_para
+	{
+		width: 475px;
+		color: #1a3159;
+		font-weight: bold;
+		font-family: Sans-serif;
+		padding-left: 18px;
+		padding-top: 20px;
+		clear: right;
+		font-size: 20px;
 	}
 
 	</style>
@@ -69,23 +245,38 @@
 <div class="main">
 	<div class="header">
 
-		<div class="logo"></div>
+		<div class="logo"><img class="log" src="fbproject/logo.png"/></div>
 
-		<div class="login"></div>
+		<div class="login">
+			<div class="lbl" style="float: left;padding-top: 10px; padding-right: 20px;padding-left: 20px;">
+				<label style="padding-left:-10px;padding-right: 85px;color:white;float: left;font-family: Sans-serif;"><small>Email or Phone</small></label>
+				<label style="color: white;font-family: Sans-serif;"><small>Password</small></label>
+			</div>	
+			<div class="ip" style="clear: both;padding: 5px 20px;">
+				<input style="border-style: groove;border-width:1px;border-color: #292933; height: 20px;margin-right: 5px;font-weight: bold;" type="text"/>
+				<input style="border-style: groove;border-width:1px; height: 20px; border-color: #292933;font-weight: bold;" type="password"/>
+				<button class="btn_login" type="botton">Log In</button>
+			</div>	
+			<a href="#" style="clear: both;color: #c7d5ed;font-family: Sans-serif; font-weight: bolder; text-decoration: none;padding-left: 200px;">
+			<small>Forgotten account?</small></a>
+		</div>
 
 	</div>
 
-	<div class="sub">
+	<div class="sub1">
 
-		<div class="fb_con"></div>
+		<div class="fb_con">
+			<p class="con_para">Facebook helps you connect and share with the people in your life.</p>
+				<img class="img_con" src="fbproject/connect.png">
+		</div>
 
 		<div class="container">
 			<div class="log_header">
-				<h2>Create an account</h2>
-				<h5>It's free and always will be.</h5>
+				<h2 >Create an account</h2>
+				<h5 style="font-weight: normal;">It's free and always will be.</h5>
 			</div>
 
-			<div class="inputs1">
+			<div class="inputs1" style="margin-top: -20px;">
 				<input type="text" class="fname" placeholder="First name"/>
 				<input type="text" class="sname" placeholder="Surename"/>
 				<input type="text" class="mobile" placeholder="Mobile number or Email address"/>
@@ -94,7 +285,6 @@
 
 			<div class="inputs2">
 				<label class="bdy">Birthday</label><br>
-				<!--<input type="date" class="dt" value="Day"/>-->
 				<div class="mainb">
 					<div class="birthday">
 						<select class="dy" value="Day">
@@ -170,14 +360,14 @@
 			</div>
 
 			<div class="txt">
-				<p>By clicking Create an account, you agree to our <span>Terms</span> and confirm that you have read our <span>Data Policy</span>, including our <span>Cookie Use Policy</span>. You may receive SMS message notifications from Facebook and can opt out at any time</p>
+				<p><small>By clicking Create an account, you agree to our <span>Terms</span> and confirm that you have read our <span>Data Policy</span>, including our <span>Cookie Use Policy</span>. You may receive SMS message notifications from Facebook and can opt out at any time</small></p>
 			</div>
 
 			<button type="button" class="btn">Create an account</button>
 
+				<div class="footer"><p  id="foot"><span>Create a page</span> for celebrity, band or business.</p></div>
 
 		</div>
-
 
 	</div>
 
