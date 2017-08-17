@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		table
+		{
+			background-color: #76fcdf;
+			border
+		}
+	</style>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+		<!-- latest compiled and minified css -->
+
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		function valid()
+		{
+			var name_length=document.reg.pass.value;
+			var name_count=name_length.length;
+			if((document.reg.name.value)=="" /*|| (document.reg.add.value)=="" || 
+				(document.reg.phone.value)==""*/)
+			{
+				document.getElementById('name_label').style.visibility="visible";
+			}
+			else
+			{
+				document.getElementById('name_label').innerHTML="";
+			}
+			var pass_length=document.reg.pass.value;
+			var pass_count=pass_length.length;
+			if((document.reg.pass.value)=="")
+			{
+				document.getElementById('pass_label').style.visibility="visible";
+			}
+			else if(pass_count>=3	)
+			{
+				document.getElementById('pass_label').style.visibility="hidden";
+			}
+			else
+			{
+				document.getElementById('pass_label').innerHTML="password should be min  3 characters";
+			}
+			
+			if((document.getElementById("gend").checked== false) && (document.getElementById("gend1").checked== false))
+			{
+
+			}
+			if ((document.reg.hob.value)=="")
+			{
+				
+			}
+		}
+	</script>
+	
+
+</head>
+<body>
+<h2 align="center"></h2>
+
+<form name="reg">
+	<table>
+		<tr><th colspan="3">Customer Registration</th></tr>
+		<tr>
+			<td><label> Customer Name:</label></td>
+			<td></td>
+			<td><input type="text" name="name" onkeypress="valid()" onkeydown="valid()" onkeyup="valid()" /></td>
+			<td><label id="name_label" style="visibility: hidden;color: red">Please enter a name</label></td>
+		</tr>
+		<tr>
+			<td><label> Password:</label></td>
+			<td></td>
+			<td><input type="Password" name="pass" onkeypress="valid()"" onkeydown="valid()" onkeyup="valid()"></td>
+			<td><label id="pass_label" style="visibility: hidden;color: red">Please enter a password</label></td>
+		</tr>
+		<tr>
+			<td><label> Gender:</label></td>
+			<td></td>
+			<td>Male<input type="radio" id="gend" name="g1" value="Male"> Female<input id="gend1" type="radio" name="g1" value="Female"></td>
+			<td><label id="pass_label" style="visibility: hidden;color: red">Please enter a password</label></td>
+		</tr>
+		<tr>
+			<td><label> Address:</label></td>
+			<td></td>
+			<td><textarea name="add" rows="5" cols="25"></textarea></td>
+		</tr>
+		<tr>
+			<td><label> Telephone No:</label></td>
+			<td></td>
+			<td><input type="text" name="phone"></td>
+		</tr>
+		<tr>
+			<td><label> Hobbies:</label></td>
+			<td></td>
+			<td>
+				<select required="" name="hob">
+					<option value=""></option>
+					<option value="read">Reading</option>
+					<option value="write">Writing</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td><button type='button' onclick="valid()">Submit</button></td>
+		</tr>
+
+	</table>
+</form>
+
+
+	
+	
+	
+	
+	
+
+</form>
+
+</body>
+</html>

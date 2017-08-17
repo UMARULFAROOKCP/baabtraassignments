@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+		<!-- latest compiled and minified css -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<br />
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+		<button class="btn btn-primary btn-sm" data-target="#loginModal" id="btnShowModel">Login</button>
+			<div class="modal fade" data-keyboard="false" data-backdrop="static" id="loginModal" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button class="close" id="btnHideModel1">&times;</button>
+							<h4 class="modal-title">Login</h4>
+						</div>
+						<div class="modal-body">
+							<form>
+								<div class="form-group">
+									<label for="inputUsername">Username</label>
+									<input type="text" class="form-control" placeholder="Login Username" id="inputUsername" />
+								</div>
+								<div class="form-group">
+									<label for="inputPassword">Password</label>
+									<input type="password" class="form-control" placeholder="Login Password" id="inputPassword" />
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-primary">Login</button>
+							<button class="btn btn-primary" id="btnHideModel2">close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+		$('#btnShowModel').click(function()
+		{
+			$('#loginModal').modal('show');
+		});
+
+		$('#btnHideModel1').click(function()
+		{
+			$('#loginModal').modal('hide');
+		});
+		$('#btnHideModel2').click(function()
+		{
+			$('#loginModal').modal('hide');
+		});
+
+	});
+</script>
+</body>
+</html>
